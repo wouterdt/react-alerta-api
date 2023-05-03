@@ -1,0 +1,156 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1655122948.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"resource",
+		"event",
+		"severity",
+		"environment",
+		"text",
+		"attributes"
+	],
+	"properties": {
+		"resource": {
+			"$id": "#root/resource", 
+			"title": "Resource", 
+			"type": "string",
+			"examples": [
+				"resource"
+			],
+			"pattern": "^.*$"
+		},
+		"event": {
+			"$id": "#root/event", 
+			"title": "Event", 
+			"type": "string",
+			"examples": [
+				"event"
+			],
+			"pattern": "^.*$"
+		},
+		"tags": {
+			"$id": "#root/tags", 
+			"title": "Tags", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/tags/items", 
+				"title": "Items", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"tag1"
+				],
+				"pattern": "^.*$"
+			}
+		},
+		"services": {
+			"$id": "#root/services", 
+			"title": "Services", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/services/items", 
+				"title": "Items", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"service"
+				],
+				"pattern": "^.*$"
+			}
+		},
+		"correlate": {
+			"$id": "#root/correlate", 
+			"title": "Correlate", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/correlate/items", 
+				"title": "Items", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"correlate"
+				],
+				"pattern": "^$"
+			}
+		},
+		"severity": {
+			"$id": "#root/severity", 
+			"title": "Severity", 
+			"type": "string",
+			"default": "None",
+			"examples": [
+				"High",
+				"Medium",
+				"Low",
+				"None"
+			],
+			"pattern": "High|Medium|Low|None"
+		},
+		"status": {
+			"$id": "#root/status", 
+			"title": "status", 
+			"type": "string",
+			"default": "None",
+			"examples": [
+				"open",
+				"shelved"
+			],
+			"pattern": "open|shelved"
+		},
+		"environment": {
+			"$id": "#root/environment", 
+			"title": "Environment", 
+			"type": "string",
+			"examples": [
+				"Production"
+			],
+			"pattern": "^.*$"
+		},
+		"group": {
+			"$id": "#root/group", 
+			"title": "Group", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"tool"
+			],
+			"pattern": "^.*$"
+		},
+		"value": {
+			"$id": "#root/value", 
+			"title": "Value", 
+			"type": "integer",
+			"default": "",
+			"examples": [
+				"10"
+			],
+			"pattern": "^.*$"
+		},
+		"text": {
+			"$id": "#root/text", 
+			"title": "Text", 
+			"type": "string",
+			"default": "",
+			"examples": [
+				"ticket text"
+			],
+			"pattern": "^.*$"
+		},
+		"timeout": {
+			"$id": "#root/timeout", 
+			"title": "Timeout", 
+			"type": "integer",
+			"default": "",
+			"examples": [
+				"100"
+			],
+			"pattern": "^.*$"
+		}
+	}
+}
