@@ -26,7 +26,7 @@ export class AlertaCreateAlertApp extends React.Component  {
               attributes : new Map()
             },
             meta : {
-                url : 'http://ldsmaalrt001a.cloud.smals.be/api'
+                url : 'http://example.com/api'
             },
             statusmap : STATUS_MAP,
             severitymap : SEVERITY_MAP
